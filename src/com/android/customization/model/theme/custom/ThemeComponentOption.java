@@ -21,7 +21,6 @@ import static com.android.customization.model.ResourceConstants.OVERLAY_CATEGORY
 import static com.android.customization.model.ResourceConstants.OVERLAY_CATEGORY_ICON_LAUNCHER;
 import static com.android.customization.model.ResourceConstants.OVERLAY_CATEGORY_ICON_SETTINGS;
 import static com.android.customization.model.ResourceConstants.OVERLAY_CATEGORY_ICON_SYSUI;
-import static com.android.customization.model.ResourceConstants.OVERLAY_CATEGORY_ICON_THEMEPICKER;
 import static com.android.customization.model.ResourceConstants.OVERLAY_CATEGORY_SHAPE;
 
 import android.content.Context;
@@ -207,8 +206,7 @@ public abstract class ThemeComponentOption implements CustomizationOption<ThemeC
                 return themePackages.get(OVERLAY_CATEGORY_ICON_SYSUI) == null &&
                         themePackages.get(OVERLAY_CATEGORY_ICON_SETTINGS) == null &&
                         themePackages.get(OVERLAY_CATEGORY_ICON_ANDROID) == null &&
-                        themePackages.get(OVERLAY_CATEGORY_ICON_LAUNCHER) == null &&
-                        themePackages.get(OVERLAY_CATEGORY_ICON_THEMEPICKER) == null;
+                        themePackages.get(OVERLAY_CATEGORY_ICON_LAUNCHER) == null;
             }
             for (Map.Entry<String, String> overlayEntry : getOverlayPackages().entrySet()) {
                 if(!Objects.equals(overlayEntry.getValue(),

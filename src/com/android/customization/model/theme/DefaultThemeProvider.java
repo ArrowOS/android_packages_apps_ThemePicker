@@ -25,7 +25,6 @@ import static com.android.customization.model.ResourceConstants.OVERLAY_CATEGORY
 import static com.android.customization.model.ResourceConstants.OVERLAY_CATEGORY_ICON_LAUNCHER;
 import static com.android.customization.model.ResourceConstants.OVERLAY_CATEGORY_ICON_SETTINGS;
 import static com.android.customization.model.ResourceConstants.OVERLAY_CATEGORY_ICON_SYSUI;
-import static com.android.customization.model.ResourceConstants.OVERLAY_CATEGORY_ICON_THEMEPICKER;
 import static com.android.customization.model.ResourceConstants.OVERLAY_CATEGORY_SHAPE;
 import static com.android.customization.model.ResourceConstants.SYSUI_PACKAGE;
 
@@ -443,8 +442,6 @@ public class DefaultThemeProvider extends ResourcesApkProvider implements ThemeB
                     customPackages.get(OVERLAY_CATEGORY_ICON_SETTINGS));
             mOverlayProvider.addNoPreviewIconOverlay(builder,
                     customPackages.get(OVERLAY_CATEGORY_ICON_LAUNCHER));
-            mOverlayProvider.addNoPreviewIconOverlay(builder,
-                    customPackages.get(OVERLAY_CATEGORY_ICON_THEMEPICKER));
             if (theme.has(THEME_TITLE_FIELD)) {
                 builder.setTitle(theme.getString(THEME_TITLE_FIELD));
             }
