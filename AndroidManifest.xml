@@ -44,7 +44,7 @@
             <category android:name="android.intent.category.HOME" />
         </intent>
         <!-- Themes stub package -->
-        <package android:name="org.lineageos.customization" />
+        <package android:name="com.google.android.apps.customization.pixel" />
     </queries>
 
     <uses-permission android:name="com.android.launcher3.permission.READ_SETTINGS" />

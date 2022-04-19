@@ -18,11 +18,13 @@
 <resources>
     <!-- Package of the stub apk containing the themes descriptions -->
     <string name="themes_stub_package" translatable="false">
-        com.android.customization.themes
+        com.google.android.apps.customization.pixel
     </string>
 
     <!-- Package of the stub apk containing the clock content -->
-    <string name="clocks_stub_package" translatable="false"/>
+    <string name="clocks_stub_package" translatable="false">
+        com.evolution.customization
+    </string>
 
     <!-- Authority of a System UI provider that provides preview info for available clockfaces. -->
     <string name="clocks_provider_authority" translatable="false">
