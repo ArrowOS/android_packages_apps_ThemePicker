@@ -16,6 +16,23 @@
       "message": "need fix",
       "revId": "983191fb28ecce300d40d1e344b8d09de8846f07",
       "serverId": "66da7299-18b4-411a-8fa2-12a880778196"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a132fd62_5fddc271",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 160
+      },
+      "writtenOn": "2022-05-06T12:41:24Z",
+      "side": 1,
+      "message": "reproduce: open theme\u0026style -\u003e tap basic colors and click one of them -\u003e go to recent and clear themepicker -\u003e re-open theme\u0026style",
+      "revId": "983191fb28ecce300d40d1e344b8d09de8846f07",
+      "serverId": "66da7299-18b4-411a-8fa2-12a880778196"
     }
   ]
 }
