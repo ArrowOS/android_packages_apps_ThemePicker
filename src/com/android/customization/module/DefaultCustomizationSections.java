@@ -143,12 +143,6 @@ public final class DefaultCustomizationSections implements CustomizationSections
                                         mColorPickerViewModelFactory)
                                         .get(ColorPickerViewModel.class),
                                 lifecycleOwner),
-                        // Wallpaper quick switch section.
-                        new WallpaperQuickSwitchSectionController(
-                                screen,
-                                wallpaperQuickSwitchViewModel,
-                                lifecycleOwner,
-                                sectionNavigationController),
                         /* reverseOrderWhenHorizontal= */ true));
 
         switch (screen) {
