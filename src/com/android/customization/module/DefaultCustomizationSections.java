@@ -133,23 +133,9 @@ public final class DefaultCustomizationSections implements CustomizationSections
                                 sectionNavigationController,
                                 wallpaperInteractor));
 
-        sectionControllers.add(
-                new ConnectedSectionController(
-                        // Theme color section.
-                        new ColorSectionController2(
-                                sectionNavigationController,
-                                new ViewModelProvider(
-                                        activity,
-                                        mColorPickerViewModelFactory)
-                                        .get(ColorPickerViewModel.class),
-                                lifecycleOwner),
-                        // Wallpaper quick switch section.
-                        new WallpaperQuickSwitchSectionController(
-                                screen,
-                                wallpaperQuickSwitchViewModel,
-                                lifecycleOwner,
-                                sectionNavigationController),
-                        /* reverseOrderWhenHorizontal= */ true));
+        // Theme color section.
+        sectionControllers.add(new ColorSectionController(
+                activity, wallpaperColorsViewModel, lifecycleOwner, savedInstanceState));
 
         switch (screen) {
             case LOCK_SCREEN:
